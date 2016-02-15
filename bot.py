@@ -34,7 +34,7 @@ def on_user_joins(m):
 				user.append(str(cid))
 				with open('user.txt', 'a') as f:
 					f.write(str(cid)+"\n")
-			bot.send_message(cid, "WOAAH! That was a very fast transport! 😨\nHi! My Name is Logging Bot clone! \n" + str(inviter) + " has invited me into this group!\n\nIf you want to Setup me type /setup into the Chat.\nI will try to bridge all your messages to another group! 😉\nIf you want to see all the cute guys behind the Bot type /credits 😇")
+			bot.send_message(cid, "WOAAH! That was a very fast transport! 😨\nHi! My Name is EMC Bot clone! \n" + str(inviter) + " has invited me into this group!\n\nIf you want to Setup me type /setup into the Chat.\nI will try to bridge all your messages to another group! 😉\nIf you want to see all the cute guys behind the Bot type /credits 😇")
 			print "New group received."
 			userwhogotadded = m.new_chat_participant.first_name
 			username = m.new_chat_participant.username
